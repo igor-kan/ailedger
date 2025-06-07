@@ -17,26 +17,23 @@ concurrency:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Adjust if your project needs a different Node version
-
+          node-version: '20'
       - name: Install dependencies
-        run: npm install # Or yarn/pnpm install based on lock file
-
+        run: npm install
       - name: Build
-        run: npm run build # This uses the 'vite build' script from package.json
-
+        run: npm run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Vite's default output directory is 'dist'
-
+          path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
