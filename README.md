@@ -25,9 +25,9 @@ Visit the live site: [https://igor-kan.github.io/ailedger](https://igor-kan.gith
 
 ## Deployment
 
-This app is automatically deployed to GitHub Pages from the `gh-pages` branch. The static site is built with Vite and output to the `dist` directory.
+This app is automatically deployed to GitHub Pages from the `main` branch using GitHub Actions. The static site is built with Vite (output to the `dist` directory) and deployed.
 
-To deploy manually:
+You can also deploy manually using the `gh-pages` package:
 ```bash
 npm run deploy
 ```
@@ -52,10 +52,10 @@ Follow these steps:
 
 ```sh
 # Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+git clone https://github.com/igor-kan/ailedger.git
 
 # Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+cd ailedger
 
 # Step 3: Install the necessary dependencies.
 npm i
