@@ -1,97 +1,218 @@
 # ailedger
 
-A web app for automated ledger management and AI-powered accounting.
+[![CI Status](https://github.com/igor-kan/ailedger/workflows/CI/badge.svg)](https://github.com/igor-kan/ailedger/actions)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Last Commit](https://img.shields.io/github/last-commit/igor-kan/ailedger)](https://github.com/igor-kan/ailedger/commits/main)
+[![Next.js](https://img.shields.io/badge/Next.js-15-black)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38B2AC)](https://tailwindcss.com/)
 
-## Features
-- Automated ledger creation
-- AI-driven accounting insights
-- Transaction management
-- Real-time analytics
+> Modern web application built with cutting-edge technologies
 
-## Live Demo
+## ✨ Features
 
-Visit the live site: [https://igor-kan.github.io/ailedger](https://igor-kan.github.io/ailedger)
+- 🚀 **Next.js 15** with App Router for optimal performance
+- 💎 **TypeScript** for type safety and enhanced developer experience
+- 🎨 **Tailwind CSS** for modern, responsive design
+- ⚡ **Server-Side Rendering** for improved SEO and performance
+- 🔧 **Modern Development Tools** with ESLint, Prettier, and automated workflows
 
-## Local Development
+## 🚀 Quick Start
 
-1. Install dependencies:
-    ```bash
-    npm install
-    ```
-2. Start the development server:
-    ```bash
-    npm run dev
-    ```
+### Prerequisites
 
-## Deployment
+- Node.js 20.11.0 or later
+- npm or bun package manager
+- Git version control
 
-This app is automatically deployed to GitHub Pages from the `main` branch using GitHub Actions. The static site is built with Vite (output to the `dist` directory) and deployed.
+### Installation
 
-You can also deploy manually using the `gh-pages` package:
+```bash
+# Clone the repository
+git clone https://github.com/igor-kan/ailedger.git
+cd ailedger
+
+# Install dependencies
+npm install
+# or
+bun install
+```
+
+### Environment Setup
+
+1. Copy the environment template:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Update the `.env` file with your configuration
+
+### Development
+
+```bash
+# Start development server
+npm run dev
+# or
+bun dev
+```
+
+The application will be available at `http://localhost:3000` (or appropriate port).
+
+## 📋 Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start development server |
+| `npm run build` | Build for production |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
+| `npm run type-check` | Run TypeScript compiler |
+
+## 🏗️ Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── app/            # Next.js App Router pages
+├── lib/            # Utility functions
+├── hooks/          # Custom React hooks
+├── types/          # TypeScript type definitions
+└── styles/         # Global styles
+public/             # Static assets
+__tests__/          # Test files
+```
+
+## 🌐 Deployment
+
+### GitHub Pages
+
 ```bash
 npm run deploy
 ```
 
----
+### Docker
 
-For more, see [GitHub Pages for this repo](https://igor-kan.github.io/ailedger).
-
-## Project info
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone https://github.com/igor-kan/ailedger.git
-
-# Step 2: Navigate to the project directory.
-cd ailedger
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+docker build -t ailedger .
+docker run -p 3000:3000 ailedger
 ```
 
-**Edit a file directly in GitHub**
+## 🧪 Testing
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+# Run all tests
+npm test
 
-**Use GitHub Codespaces**
+# Run tests in watch mode
+npm run test:watch
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Run tests with coverage
+npm run test:coverage
+```
 
-## What technologies are used for this project?
+## 🐳 Docker Support
 
-This project is built with:
+Docker support not yet implemented.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📄 Environment Variables
 
-## How can I deploy this project?
+See [.env.example](.env.example) for required environment variables.
 
-You can deploy this project using your preferred deployment platform.
+## 🤝 Contributing
 
-## Can I connect a custom domain to my project?
+We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
 
-Yes, you can!
+### Development Setup
+
+1. Fork the repository
+2. Clone your fork: `git clone https://github.com/YOUR_USERNAME/ailedger.git`
+3. Create a feature branch: `git checkout -b feature/amazing-feature`
+4. Install dependencies: `npm install`
+5. Make your changes and test thoroughly
+6. Commit your changes: `git commit -m 'Add amazing feature'`
+7. Push to your branch: `git push origin feature/amazing-feature`
+8. Open a Pull Request
+
+## 📝 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Built with modern development tools and best practices
+- Inspired by the open-source community
+- Thanks to all contributors and users
+
+## 📞 Support
+
+- 📧 **Email**: Available through GitHub profile
+- 🐛 **Issues**: [GitHub Issues](https://github.com/igor-kan/ailedger/issues)
+- 💬 **Discussions**: [GitHub Discussions](https://github.com/igor-kan/ailedger/discussions)
+
+## 🔗 Links
+
+- 🌐 **Live Demo**: https://igor-kan.github.io/ailedger
+- 📚 **Documentation**: [Full Documentation](docs/)
+- 🎯 **Project Board**: [GitHub Projects](https://github.com/igor-kan/ailedger/projects)
+
+---
+
+**Made with ❤️ by [Igor Kan](https://github.com/igor-kan)**
+## Pre-commit Setup
+
+This project uses pre-commit hooks for code quality. To set up:
+
+```bash
+# Install pre-commit (if not already installed globally)
+pip install pre-commit
+
+# Install hooks
+pre-commit install
+
+# Or for Node.js projects with Husky:
+npm install --save-dev husky lint-staged
+npm run prepare
+```
+
+## Development with VS Code Dev Containers
+
+This project includes a VS Code dev container configuration for consistent development environments.
+
+### Prerequisites
+- Docker Desktop
+- VS Code with Remote-Containers extension
+
+### Getting Started
+1. Open the project in VS Code
+2. When prompted, click "Reopen in Container" or use Command Palette: "Remote-Containers: Reopen in Container"
+3. Wait for the container to build and start
+4. All dependencies will be automatically installed
+
+### Features
+- Pre-configured development environment
+- All necessary tools and extensions
+- Consistent setup across all machines
+- Isolated development environment
+
+
+## Code Review
+
+This repository uses CODEOWNERS for automatic review requests:
+
+- **All changes** require review from repository maintainers
+- **Pull requests** will automatically request reviews from code owners
+- **Critical files** (configuration, build, deployment) have additional review requirements
+
+See [CODEOWNERS](CODEOWNERS) for detailed review assignments.
+
+
+## Repository Configuration
+
+This repository uses `.gitattributes` for consistent file handling:
+
+- **Line endings**: Automatic normalization to LF for text files
+- **Binary files**: Proper handling of images, fonts, and compiled files  
+- **Language detection**: Accurate GitHub language statistics
+- **Generated files**: Exclusion of build artifacts from diffs and language stats
+- **Cross-platform**: Consistent behavior across Windows, macOS, and Linux
+
